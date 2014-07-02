@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-22 21:24:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="plant.diseases.serverdb.model.TlDiseasesUpload" table="TL_DISEASES_UPLOAD" catalog="STOCKQUOTES">
+		<id name="uploadId" type="java.lang.Long">
+			<column name="UPLOAD_ID" precision="18" scale="0" />
+			<generator class="sequence">
+				<param name="sequence">SEQ_DISEASES_UPLOAD</param>
+			</generator>
+		</id>
+		<property name="imgName" type="java.lang.String">
+			<column name="IMG_NAME" length="255">
+			</column>
+		</property>
+		<property name="userName" type="java.lang.String">
+			<column name="USER_NAME" length="20" not-null="true">
+			</column>
+		</property>
+		<property name="userMobile" type="java.lang.String">
+			<column name="USER_MOBILE" length="20" not-null="true">
+			</column>
+		</property>
+		<property name="isread" type="java.lang.Long">
+			<column name="ISREAD" not-null="true">
+			</column>
+		</property>
+		<property name="userDesc" type="java.lang.String">
+			<column name="USER_DESC" length="20" not-null="true">
+			</column>
+		</property>
+		<property name="uploadtime" type="java.util.Date">
+			<column name="UPLOADTIME" length="20" not-null="true">
+			</column>
+		</property>
+	</class>
+</hibernate-mapping>

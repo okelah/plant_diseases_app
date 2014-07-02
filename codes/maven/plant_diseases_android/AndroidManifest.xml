@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="plant.diseases.android"
+          android:versionCode="1"
+          android:versionName="1.0-SNAPSHOT">
+
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 访问网络连接，可能产生GPRS流量 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-sdk
+            android:minSdkVersion="8"
+            android:targetSdkVersion="16"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:name=".application.DiseasesApplication">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DiagnoseActivity"/>
+        <activity android:name=".activity.DiagnoseResultActivity"/>
+        <activity android:name=".activity.DiseaseViewActivity"/>
+        <activity android:name=".activity.DiseasePhotosActivity"/>
+        <activity android:name=".activity.PestPhotosActivity"/>
+        <activity android:name=".activity.DiseaseListActivity"/>
+        <activity android:name=".activity.PestListActivity"/>
+        <activity
+                android:name=".activity.PhotoUploadActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"/>
+    </application>
+
+</manifest>

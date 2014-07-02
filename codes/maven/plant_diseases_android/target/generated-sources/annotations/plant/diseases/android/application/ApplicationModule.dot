@@ -1,0 +1,21 @@
+digraph G1 {
+  concentrate = true;
+  n2 [label="AbsClientConfig<com.zyt.communicate.common.json.IReqBody, com.zyt.communicate.common.json.IRespBody>"];
+  AbsJsonWebController -> n2;
+  n3 [label="IRespBodyValueSetter<com.zyt.communicate.common.json.IReqBody, com.zyt.communicate.common.json.IRespBody>"];
+  AbsJsonWebController -> n3;
+  n4 [label="AbsWebController<com.zyt.communicate.common.json.IReqBody, com.zyt.communicate.common.json.IRespBody>"];
+  n4 -> GsonJsonWebController;
+  DiagnoseActivity -> AbsDaoFactory;
+  DiagnoseResultActivity -> AbsDaoFactory;
+  DiseaseListActivity -> AbsDaoFactory;
+  GsonJsonWebController -> n2;
+  GsonJsonWebController -> IGsonCreator;
+  GsonSendUtil -> n2;
+  n3 -> JsonRespXmlRespBodyValueSetter;
+  JsonRespXmlRespBodyValueSetter -> n2;
+  JsonRespXmlRespBodyValueSetter -> IGsonCreator;
+  JsonRespXmlRespBodyValueSetter -> GsonSendUtil;
+  PestListActivity -> AbsDaoFactory;
+  PhotoUploadActivity -> n4;
+}

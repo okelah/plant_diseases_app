@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: ihandy_android_components:zyt_android_html:aar:1.0.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/plant_diseases_android/gen-external-apklibs/ihandy_android_components_zyt_android_html_1.0.0.0-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/plant_diseases_android/gen-external-apklibs/ihandy_android_components_zyt_android_html_1.0.0.0-SNAPSHOT/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ihandy_android_components/zyt_android_html/1.0.0.0-SNAPSHOT/zyt_android_html-1.0.0.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ihandy_android_components/zyt_android_html/1.0.0.0-SNAPSHOT/zyt_android_html-1.0.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

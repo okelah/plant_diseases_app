@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="rbItem_0" />
+    <item type="id" name="rbItem_1" />
+    <item type="id" name="rbItem_2" />
+    <item type="id" name="rbItem_3" />
+    <item type="id" name="rbItem_4" />
+    <item type="id" name="rbItem_5" />
+    <item type="id" name="rbItem_6" />
+    <item type="id" name="rbItem_7" />
+    <item type="id" name="rbItem_8" />
+    <item type="id" name="rbItem_9" />
+    <item type="id" name="rbItem_10" />
+    <item type="id" name="rbItem_11" />
+    <item type="id" name="rbItem_12" />
+    <item type="id" name="rbItem_13" />
+    <item type="id" name="rbItem_14" />
+    <item type="id" name="rbItem_15" />
+    <item type="id" name="rbItem_16" />
+    <item type="id" name="rbItem_17" />
+    <item type="id" name="rbItem_18" />
+    <item type="id" name="rbItem_19" />
+</resources>

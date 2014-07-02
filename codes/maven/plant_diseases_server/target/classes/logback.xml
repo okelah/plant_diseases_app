@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <property name="USER_HOME" value="logs/plant_diseases_server"/>
+
+    <!-- common log -->
+    <appender name="commonlog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${USER_HOME}/common.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${USER_HOME}/common.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>60</MaxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%date{MM-dd HH:mm:ss} %-5p[%F:%L][%t] - %msg%n</Pattern>
+        </layout>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="commonlog"/>
+    </root>
+
+</configuration>

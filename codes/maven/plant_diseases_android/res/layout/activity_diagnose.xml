@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/diseases_header"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="水稻病害诊断"
+                    android:textSize="@dimen/font_size_biggest"
+                    android:textColor="#0099CC"/>
+
+            <RadioGroup
+                    android:id="@+id/rgItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            </RadioGroup>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="提示：选定与待鉴定病害发病期相符的条目，点击[下一步]继续"
+                    android:textColor="#AEAEAE"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+            <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/btn_padding_topbottom"
+                    android:paddingBottom="@dimen/btn_padding_topbottom"
+                    android:paddingLeft="@dimen/btn_padding_leftright"
+                    android:paddingRight="@dimen/btn_padding_leftright"
+                    android:background="@drawable/btn_background"
+                    android:text="下一步"
+                    android:textSize="@dimen/font_size_middle"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

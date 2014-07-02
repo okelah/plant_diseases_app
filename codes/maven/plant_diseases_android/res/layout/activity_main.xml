@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/diseases_header"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin_big">
+
+        <TextView
+                android:id="@+id/tvDiagnose"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="病害诊断"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/tvDiseasePhotos"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="病害图库"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        <TextView
+                android:id="@+id/tvPestPhotos"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="害虫图库"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/tvDiseaseView"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="病害浏览"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        <TextView
+                android:id="@+id/tvPestView"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="害虫浏览"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/tvPhotoUpload"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="拍照上传"
+                android:textSize="@dimen/font_size_big"
+                android:background="#99ffcc"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

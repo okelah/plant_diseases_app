@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- dbcp data source bean -->
+    <bean id="dbDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="${db.jdbcUrl}"/>
+        <property name="username" value="${db.user}"/>
+        <property name="password" value="${db.password}"/>
+        <property name="maxActive" value="20"/>
+        <property name="maxIdle" value="10"/>
+        <property name="minIdle" value="1"/>
+        <property name="validationQuery" value="select 1 from dual"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testWhileIdle" value="true"/>
+    </bean>
+
+    <!-- 事务bean -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dbDataSource"/>
+    </bean>
+
+    <!-- 扫描@Transaction -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- 抽象dao bean -->
+    <bean id="dbAbstractDAO" abstract="true" lazy-init="true">
+        <property name="dataSource" ref="dbDataSource"/>
+    </bean>
+
+    <bean id="dbTlDiseasesUploadDAO" parent="dbAbstractDAO"
+          class="plant.diseases.serverdb.dao.jdbc.JdbcTlDiseasesUploadDAO"/>
+</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- Gson对象生成器，通讯服务端必须注册 -->
+    <bean id="communicateGsonCreator" class="com.zyt.communicate.common.json.gson.DefaultGsonCreator"/>
+
+    <!-- 请求消息体MAP集合：key:请求命令ID, value:请求消息体类名; 通讯服务端必须注册 -->
+    <util:map id="communicateReqBodyMap" value-type="java.lang.Class">
+    </util:map>
+    <!-- 响应消息体MAP集合：key:响应消息体类名, value:响应命令ID; 通讯服务端必须注册 -->
+    <util:map id="communicateRespBodyMap">
+    </util:map>
+    <!-- 通信职责链，通讯服务端必须注册 -->
+    <bean id="communicateChain" class="com.zyt.communicate.server.json.JsonWebServiceChain">
+        <!-- 设置不添加异常捕捉filter -->
+        <property name="addExcepFilterFlag" value="false"/>
+        <property name="filters">
+            <list>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 以下是带文件处理的服务端配置-->
+    <!-- 带文件请求消息体MAP集合：key:请求命令ID, value:请求消息体类名; 通讯服务端必须注册 -->
+    <util:map id="fileCommunicateReqBodyMap" value-type="java.lang.Class">
+        <!-- 用户问题添加请求 -->
+        <entry key="0501" value="plant.diseases.protocol.PhotoUploadReqBody"/>
+    </util:map>
+    <!-- 带文件响应消息体MAP集合：key:响应消息体类名, value:响应命令ID; 通讯服务端必须注册 -->
+    <util:map id="fileCommunicateRespBodyMap">
+        <entry key="plant.diseases.protocol.PhotoUploadRespBody" value="8501"/>
+    </util:map>
+    <!-- 带文件通信职责链 -->
+    <bean id="fileCommunicateChain" class="com.zyt.communicate.server.json.JsonFileWebServiceChain">
+        <!-- 设置不添加异常捕捉filter -->
+        <property name="addExcepFilterFlag" value="false"/>
+        <property name="filters">
+            <list>
+                <!--用户问题添加请求过滤器-->
+                <bean class="plant.diseases.server.filter.PhotoUploadFilter"/>
+            </list>
+        </property>
+    </bean>
+</beans>

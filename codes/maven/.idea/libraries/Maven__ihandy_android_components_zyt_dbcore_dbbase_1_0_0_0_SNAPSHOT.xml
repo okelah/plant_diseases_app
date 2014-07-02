@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ihandy_android_components:zyt_dbcore_dbbase:1.0.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ihandy_android_components/zyt_dbcore_dbbase/1.0.0.0-SNAPSHOT/zyt_dbcore_dbbase-1.0.0.0-20140618.102757-9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ihandy_android_components/zyt_dbcore_dbbase/1.0.0.0-SNAPSHOT/zyt_dbcore_dbbase-1.0.0.0-20140618.102757-9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ihandy_android_components/zyt_dbcore_dbbase/1.0.0.0-SNAPSHOT/zyt_dbcore_dbbase-1.0.0.0-20140618.102757-9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

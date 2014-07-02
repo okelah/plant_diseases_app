@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plant_diseases_android/plant_diseases_android.iml" filepath="$PROJECT_DIR$/plant_diseases_android/plant_diseases_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plant_diseases_protocol/plant_diseases_protocol.iml" filepath="$PROJECT_DIR$/plant_diseases_protocol/plant_diseases_protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plant_diseases_server/plant_diseases_server.iml" filepath="$PROJECT_DIR$/plant_diseases_server/plant_diseases_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plant_diseases_serverdb/plant_diseases_serverdb.iml" filepath="$PROJECT_DIR$/plant_diseases_serverdb/plant_diseases_serverdb.iml" />
+    </modules>
+  </component>
+</project>
+

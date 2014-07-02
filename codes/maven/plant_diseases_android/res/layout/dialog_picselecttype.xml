@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <Button
+            android:id="@+id/btnPicByCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textSize="@dimen/font_size_middle"
+            android:layout_marginTop="10dp"/>
+
+    <Button
+            android:id="@+id/btnPicByLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从相册选择"
+            android:textSize="@dimen/font_size_middle"/>
+
+    <Button
+            android:id="@+id/btnClearPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:textSize="@dimen/font_size_middle"/>
+
+    <Button
+            android:id="@+id/btnPicCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="@dimen/font_size_middle"/>
+
+</LinearLayout>

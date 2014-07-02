@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myj2ee:J2eeSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:myj2ee="http:///myj2ee.ecore">
+  <dbSubSystem cname="病虫害服务端数据层" projectName="plant_diseases_serverdb" projectDir="E:/myproduct/plant_diseases_app/codes/maven/plant_diseases_serverdb" mainJavaFolder="src/main/java" mainResourcesFolder="src/main/resources" testJavaFolder="src/test/java" testResourcesFolder="src/test/resources" javaPackageBaseName="plant.diseases.serverdb">
+    <dbModels hbmFileName="*"/>
+  </dbSubSystem>
+</myj2ee:J2eeSystem>

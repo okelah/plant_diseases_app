@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1398348107395" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="D:/eclipse-all/资料/formatter_ihandy.xml" />
+    <option name="selectedJavaProfile" value="ihandy_formatter" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="android" url="file://$PROJECT_DIR$/plant_diseases_android" />
+    <file type="web" url="file://$PROJECT_DIR$/plant_diseases_server" />
+  </component>
+  <component name="IdProvider" IDEtalkID="501CC6E0ABDC893D00A9EAF00EB40B1C" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/plant_diseases_android/pom.xml" />
+        <option value="$PROJECT_DIR$/plant_diseases_protocol/pom.xml" />
+        <option value="$PROJECT_DIR$/plant_diseases_server/pom.xml" />
+        <option value="$PROJECT_DIR$/plant_diseases_serverdb/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android API 16 Platform" project-jdk-type="Android SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
